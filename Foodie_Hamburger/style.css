@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: beige;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.logo {
+    margin: 28px 32px;
+}
+
+.nav-container {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    text-decoration-line: none;
+    color: black;
+    margin-right: 2rem;
+    vertical-align: middle;
+    color: #492118;
+}
+
+.hamburgers-caption {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.images {
+    margin-left: 25%;
+    margin-bottom: 5rem;
+}
+
+nav {
+    display: flex;
+    gap: 60px
+    ;
+}
+
+nav a {
+    font-weight: 700;
+    font-size: 20px;
+    display: inline-block;
+    
+}
+
+.nav:hover{
+    background-color: black;
+    color: yellow;
+    
+}
+
+.hero-section {
+    margin-top: 5rem;
+}
+
+.img-container {
+    max-width: 1290px;
+    margin-left: 20%;
+
+main {
+    padding: 0 1.5rem;
+}
