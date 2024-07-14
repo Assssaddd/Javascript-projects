@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: beige;
+    font-family: "Inika", serif;
+}
+
+.popup {
+    width: 500px;
+    height: 250px;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    background-color: #FEFAF3;
+    position: fixed;
+    box-shadow: 0 5px 4px 2px rgba(0, 0, 0, 0.2);
+    transform: translate(-50%, -50%) scale(0);
+    transition: all 0.2s ease-in-out;
+    top: 0;
+    left: 0;
+    /* display: none; */
+}
+
+.close-icon {
+    font-size: 35px;
+    font-weight: 700;
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    cursor: pointer;
+}
+
+.open .popup {
+    /* display: block; */
+    transform: scale(1);
+    inset: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: rgba(127, 255, 255, 0.5); */
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.open .overlay {
+    display: block;
+}
+
+.popup-button-container {
+    position: fixed;
+    background-color: #FEFAF3;
+    border-radius: 2rem;
+    width: 400px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popup-button {
+    font-family: inherit;
+    padding: 1rem 2rem;
+    border: black;
+    box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    background-color: #EBBF53;
+    border-radius: 3rem;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.subscribe-button {
+    font-family: inherit;
+    padding: 1rem 2rem;
+    border: black;
+    box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.3);
+    background-color: #EBBF53;
+    border-radius: 3rem;
+    color: white;
+    margin-left: 3rem;
+}
+
+
+.input {
+    font-family: inherit;
+    background-color: #EEE8DD;
+    padding: 1rem 2rem;
+    min-width: 250px;
+    border-radius: 3rem;
+    margin-top: 1.5rem;
+    border: black;
+}
+
+.input::placeholder {
+    color: #AFA187;
+}
+
+.image {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: -30px;
+    left: 3rem;
+}
+
+.text {
+    padding-left: 200px;
+}
